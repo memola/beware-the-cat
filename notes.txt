@@ -1,0 +1,21 @@
+replace all <img src="*.gif" width="*" height="*" alt="*"> with alt text
+
+replace all <img src="fs-h.gif" alt="*"> with 's'
+
+replace html entities (&[^\s;]+;) with utf8 characters
+- &eacute; é
+- &#173; ??
+- &#950; (zeta) with "'s"
+
+
+/\bvsed\b/ -> used
+/\bHaue\b/ -> Have
+/\bhaue\b/ -> have
+/\bhim self\b/ -> himself
+/\bdoo\b/ -> do
+/\biu/ -> ju
+/\bconiur/ -> conju
+/\bv([^aeiouy])/ -> u$1
+
+/ue([ds])\b/ -> ve$1 
+/uing\b/ -> ving
